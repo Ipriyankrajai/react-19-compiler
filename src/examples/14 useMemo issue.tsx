@@ -7,7 +7,7 @@ export default function SortedList({ names }: { names: string[] }) {
     setNewNames(names);
   }, [names]);
 
-  const sortedNames = newNames.toSorted();
+  const sortedNames = [...newNames].sort();
 
   return (
     <ul>
