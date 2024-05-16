@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 
 export function SortedList({ names }: { names: string[] }) {
-  const sortedNames = useMemo(() => names.toSorted(), [names]);
+  const sortedNames = useMemo(() => [...names].sort(), [names]);
 
   return (
     <ul>

@@ -1,5 +1,5 @@
 export default function SortedList({ names }: { names: string[] }) {
-  const sortedNames = names.toSorted();
+  const sortedNames = [...names].sort();
 
   return (
     <ul>
